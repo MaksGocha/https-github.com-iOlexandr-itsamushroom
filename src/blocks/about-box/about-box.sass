@@ -1,0 +1,75 @@
+@import '../../globals/variables.sass'
+@import '../../globals/mixins.sass'
+
+.about-box
+	position: relative
+	padding-top: 35px
+	overflow: hidden
+	margin-bottom: 155px
+	&__inner
+		display: flex
+		align-items: flex-start
+		margin: 0 -12px
+	&__aside
+		flex-shrink: 0
+		width: 50%
+		padding: 0 12px
+		display: flex
+		justify-content: flex-end
+	&__content
+		flex-shrink: 0
+		position: relative
+		z-index: 2
+		width: 50%
+		padding: 0 12px
+	&__image
+		flex-shrink: 0
+		position: relative
+		z-index: 1
+		margin: -33px -100px 0 0
+		width: 864px
+		height: 544px
+		&-i
+			display: block
+			width: 100%
+			height: auto
+		&-el
+			position: absolute
+			top: 50%
+			left: 50%
+			margin: -190px 0 0 -150px
+			width: 200px
+			height: 200px
+			transform: rotate(-15deg)
+	&__label
+		margin-bottom: 7px
+		font-size: 14px
+		line-height: 1.2
+		letter-spacing: 0.4pt
+		font-weight: bold
+		text-transform: uppercase
+		color: $brandColor
+	&__title
+		margin: 0 0 40px
+		font-family: $secondFont
+		font-size: 58px
+		line-height: 1.4
+		letter-spacing: -1pt
+		font-weight: normal
+		text-transform: uppercase
+	&__list
+		&-item
+			margin-bottom: 50px
+			&:last-child
+				margin-bottom: 0
+		&-title
+			margin-bottom: 18px
+			font-size: 28px
+			line-height: 1.2
+			font-weight: 600
+			letter-spacing: -0.5pt
+		&-text
+			font-size: 18px
+			line-height: 1.4
+			font-weight: 500
+			color: rgba($blackColor,0.6)

@@ -1,0 +1,21 @@
+.container
+	+e.inner
+		if image
+			+e.aside
+				+e.image
+					+e('img').image-i.lozad(data-src=image src=png64 width=imageWidth height=imageHeight alt='')
+					if gif
+						+e('img').image-el.lozad(data-src=gif src=png64 width='200' height='200' alt='')
+		+e.content
+			if label
+				+e.label!= label
+			if title
+				+e('h2').title!= title
+			if list
+				+e.list
+					each item in list
+						+e.list-item
+							if item.title
+								+e.list-title!= item.title
+							if item.text
+								+e.list-text!= item.text

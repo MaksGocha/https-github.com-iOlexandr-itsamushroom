@@ -1,0 +1,17 @@
+.container
+	+e.head
+		if title
+			+e('h2').title!= title
+		if label
+			+e.label!= label
+	if data
+		+e.list
+			each item in data
+				+e.item
+					if item.title
+						+e.item-head
+							+e.item-title!= item.title
+							+e.item-icon
+					if item.text
+						+e.item-drop
+							+e.item-text!= item.text

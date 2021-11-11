@@ -1,0 +1,37 @@
+@import '../../globals/variables.sass'
+@import '../../globals/mixins.sass'
+
+.btn
+	display: inline-flex
+	vertical-align: middle
+	justify-content: center
+	align-items: center
+	padding: 13px 30px 14px
+	border: 0 none
+	border-radius: 26px
+	font-family: $secondFont
+	font-size: 21px
+	line-height: 1.2
+	letter-spacing: 1pt
+	font-weight: 500
+	text-decoration: none
+	text-transform: uppercase
+	text-align: center
+	white-space: nowrap
+	cursor: pointer
+	outline: 0 none
+	user-select: none
+	transition: .2s background ease-in-out, .2s color ease-in-out
+	&-black
+		background: $blackColor
+		color: $whiteColor
+	&-white
+		background: $whiteColor
+		color: $blackColor
+		&:hover
+			background: $blackColor
+			color: $whiteColor
+	&-sm
+		padding: 7px 30px
+		font-size: 16px
+		border-radius: 17px

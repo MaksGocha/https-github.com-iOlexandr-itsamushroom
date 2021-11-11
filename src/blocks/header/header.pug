@@ -1,0 +1,13 @@
++b.info-alert: +i
+.container
+	+e.inner
+		+e('a').logo(href='/')
+			+e('img').logo-image(src=asset('i/acino-logo-white.svg') width='97' height='27' alt='acino')
+		if menu
+			+e('nav').menu
+				+e('ul').menu-list
+					each item in menu
+						+e('li').menu-item
+							+e('a').menu-link(href=item.url)= item.title
+		+e.aside
+			+e('a').button.btn.btn-white.btn-sm(href='/') Купити

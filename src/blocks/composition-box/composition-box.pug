@@ -1,0 +1,19 @@
+.container
+	+e.head
+		if label
+			+e.label!= label
+		if title
+			+e('h2').title!= title
+	if data
+		+e.list
+			each item in data
+				+e.list-item
+					if item.image
+						+e.list-image
+							+e('img').list-image-i.lozad(data-src=item.image src=png64 width='450' height='450' alt='')
+					if item.title
+						+e.list-title!= item.title
+					if item.subtitle
+						+e.list-subtitle!= item.subtitle
+					if item.text
+						+e.list-text!= item.text

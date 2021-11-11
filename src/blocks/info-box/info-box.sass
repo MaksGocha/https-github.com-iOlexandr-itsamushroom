@@ -1,0 +1,80 @@
+@import '../../globals/variables.sass'
+@import '../../globals/mixins.sass'
+
+.info-box
+	position: relative
+	padding-top: 90px
+	overflow: hidden
+	margin-bottom: 125px
+	&__content
+		position: relative
+		z-index: 2
+		width: 55%
+		margin-bottom: 110px
+	&__label
+		margin-bottom: 7px
+		font-size: 14px
+		line-height: 1.2
+		letter-spacing: 0.4pt
+		font-weight: bold
+		text-transform: uppercase
+		color: $brandColor
+	&__title
+		margin: 0 0 40px
+		font-family: $secondFont
+		font-size: 58px
+		line-height: 1.4
+		letter-spacing: -1pt
+		font-weight: normal
+		text-transform: uppercase
+	&__text
+		width: 90%
+		font-size: 22px
+		line-height: 1.5
+		font-weight: 500
+		color: rgba($blackColor,0.6)
+	&__image
+		position: absolute
+		z-index: 1
+		top: -90px
+		left: 40%
+		width: 1224px
+		pointer-events: none
+		&-i
+			display: block
+			width: 100%
+			height: auto
+	&__list
+		position: relative
+		z-index: 2
+		margin: 0 -12px
+		display: flex
+		&-item
+			flex-shrink: 0
+			width: 50%
+			padding: 0 12px
+			&:nth-child(2)
+				margin-top: 145px
+	&__item
+		padding: 45px
+		min-height: 390px
+		border-radius: 8px
+		color: $whiteColor
+		&_pink
+			background-color: $brandColor
+		&_violet
+			background-color: $violetColor
+		&-icon
+			margin-bottom: 15px
+			&-i
+				display: block
+		&-title
+			margin: 0 0 15px
+			font-family: $secondFont
+			font-size: 40px
+			line-height: 1.4
+			letter-spacing: -1pt
+			text-transform: uppercase
+		&-text
+			font-size: 18px
+			line-height: 1.5

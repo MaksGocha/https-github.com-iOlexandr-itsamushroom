@@ -1,0 +1,23 @@
+@import '../../globals/variables.sass'
+@import '../../globals/mixins.sass'
+
+.info-alert
+	padding: 8px 0
+	background-color: $siteColor
+	color: $whiteColor
+	&__inner
+		display: flex
+		justify-content: center
+	&__icon
+		flex-shrink: 0
+		margin-right: 10px
+		width: 17px
+		height: 16px
+		svg
+			display: block
+			width: 100%
+			height: auto
+	&__text
+		font-size: 10px
+		font-weight: 500
+		text-transform: uppercase

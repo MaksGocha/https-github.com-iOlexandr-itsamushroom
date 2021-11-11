@@ -1,0 +1,17 @@
+.container
+	if bg
+		+e.bg
+			+e('img').bg-image.lozad(data-src=bg src=png64 width='1145' height='856' alt='')
+	+e.content
+		if title
+			+e('h2').title!= title
+		+e.aside
+			.validation-wrap
+				+e('form').form(novalidate)
+					.form-group
+						input.form-control(type='email' placeholder='Ваш e-mail' required)
+					+e.form-footer
+						+e('button').form-button.btn.btn-black(type='submit') Підписатись
+				+e.success
+					+e.success-title Дякуємо!
+					+e.success-text Ви успішно підписались <br/>на наші новини

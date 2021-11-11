@@ -1,0 +1,31 @@
+@import '../../globals/variables.sass'
+@import '../../globals/mixins.sass'
+
+.ticker-box
+	overflow: hidden
+	padding: 20px 0 21px
+	font-family: $secondFont
+	font-size: 44px
+	line-height: 1
+	font-weight: 500
+	color: $whiteColor
+	text-transform: uppercase
+	background-color: $siteColor
+	&__inner
+		display: flex
+	&__wrap
+		display: flex
+	&__item
+		flex-shrink: 0
+		position: relative
+		white-space: nowrap
+		padding-right: 90px
+		&:after
+			content: ''
+			position: absolute
+			top: 12px
+			right: 40px
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			background-color: $whiteColor

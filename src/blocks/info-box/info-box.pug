@@ -1,0 +1,26 @@
+.container
+	+e.content
+		if label
+			+e.label!= label
+		if title
+			+e('h2').title!= title
+		if text
+			+e.text!= text
+	if image
+		+e.image
+			+e('img').image-i.lozad(data-src=image src=png64 width='' height='1224' alt='915')
+	if list
+		+e.list
+			each item in list
+				+e.list-item
+					- classes = []
+					if item.mod
+						- classes.push('_' + item.mod)
+					+e.item(class=classes)
+						if item.icon
+							+e.item-icon
+								+e('img').item-icon-i.lozad(data-src=item.icon src=png64 width=item.iconWidth height=item.iconHeight alt='')
+						if item.title
+							+e.item-title!= item.title
+						if item.text
+							+e.item-text!= item.text

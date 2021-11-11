@@ -1,0 +1,24 @@
+.container
+	+e.inner
+		+e.content
+			if title
+				+e('h2').title!= title
+			if list
+				+e.list
+					each item in list
+						+e.list-item
+							if item.icon
+								+e.list-icon
+									+e('img').list-icon-i.lozad(data-src=item.icon src=png64 width='48' height='48' alt='')
+							if item.text
+								+e.list-text!= item.text
+			if buttonLabel && buttonUrl
+				+e.footer
+					+e('a').button.btn.btn-white(href=buttonUrl)= buttonLabel
+		if image
+			+e.aside
+				+e.image
+					+e('img').image-i.lozad(data-src=image src=png64 width='739' height='825' alt='')
+if ticker
+	+e.ticker
+		+b.ticker-box: +i({data: ticker})

@@ -1,0 +1,24 @@
+doctype html
+html(lang="ua")
+	head
+		meta(charset="UTF-8")
+		meta(content="width=device-width, minimum-scale=1" name="viewport")
+		meta(http-equiv="Cache-Control" content="max-age=31536000, must-revalidate")
+		meta(name="theme-color" content="#000000")
+		link(rel="shortcut icon" href=asset("i/favicon.png?v=1"))
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		title
+			if file.title
+				= file.title
+			else
+				= site.title
+		block styles
+
+	body
+		block root
+			!= content
+
+		block fonts
+		block scripts
+		block analytics

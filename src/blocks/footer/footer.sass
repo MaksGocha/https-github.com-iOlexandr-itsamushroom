@@ -1,0 +1,73 @@
+@import '../../globals/variables.sass'
+@import '../../globals/mixins.sass'
+
+.footer
+	position: relative
+	z-index: 50
+	flex-grow: 0
+	flex-shrink: 0
+	flex-basis: auto
+	&__inner
+		padding: 60px 0
+		display: flex
+	&__wrap
+		flex-grow: 1
+		flex-shrink: 1
+	&__main
+		flex-shrink: 0
+		width: 32%
+		display: flex
+		flex-direction: column
+	&__aside
+		flex-shrink: 0
+		width: 26%
+	&__logo
+		display: block
+		margin-bottom: 40px
+		width: 97px
+		height: 27px
+		text-decoration: none
+		&-image
+			display: block
+			width: 100%
+			height: auto
+	&__button
+		min-width: 168px
+	&__contact
+		&-title
+			margin-bottom: 8px
+			font-size: 16px
+			color: rgba($blackColor,0.5)
+		&-list
+			margin: 0
+			padding: 0
+			list-style: none
+			&-item
+				margin-bottom: 8px
+				&:last-child
+					margin-bottom: 0
+		&-link
+			font-size: 14px
+			color: $blackColor
+			text-decoration: none
+			&:hover
+				color: $brandColor
+	&__copyright
+		margin-top: auto
+		padding-top: 30px
+		font-size: 14px
+		color: rgba($blackColor,0.5)
+	&__info
+		font-size: 12px
+		line-height: 1.5
+		strong
+			font-weight: 500
+		p
+			margin: 0 0 10px
+			&:last-child
+				margin: 0
+		a
+			color: $blackColor
+			text-decoration: none
+			&:hover
+				color: $brandColor

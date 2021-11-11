@@ -1,0 +1,68 @@
+@import '../../globals/variables.sass'
+@import '../../globals/mixins.sass'
+
+.faq-box
+	padding: 105px 0 130px
+	&__head
+		margin-bottom: 40px
+	&__title
+		margin: 0 0 25px
+		font-family: $secondFont
+		font-size: 122px
+		line-height: 1.2
+		font-weight: 500
+		letter-spacing: -2pt
+		text-transform: uppercase
+	&__label
+		font-size: 14px
+		line-height: 1.2
+		letter-spacing: 0.4pt
+		font-weight: bold
+		text-transform: uppercase
+		color: $brandColor
+	&__item
+		border-bottom: 1px solid rgba($blackColor,0.4)
+		&:last-child
+			border-bottom: 0 none
+		&.active
+			.faq-box__item-icon:before
+				transform: rotate(90deg)
+		&-head
+			display: flex
+			justify-content: space-between
+			padding: 33px 0
+			user-select: none
+			cursor: pointer
+		&-title
+			flex-grow: 1
+			flex-shrink: 1
+			font-size: 28px
+			font-weight: bold
+		&-icon
+			align-self: flex-start
+			flex-shrink: 0
+			margin: -5px 0
+			width: 50px
+			height: 50px
+			position: relative
+			&:before,
+			&:after
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				width: 2px
+				height: 50px
+				margin: -25px 0 0 -1px
+				background-color: $blackColor
+				transition: 0.3s transform ease-in-out
+			&:after
+				transform: rotate(90deg)
+		&-drop
+			display: none
+		&-text
+			padding-bottom: 30px
+			width: 90%
+			font-size: 18px
+			line-height: 1.5
+			font-weight: 500

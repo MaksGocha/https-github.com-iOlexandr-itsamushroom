@@ -1,0 +1,20 @@
+.container
+	+e.inner
+		+e.wrap
+			+e('a').logo(href='/')
+				+e('img').logo-image(src=asset('i/acino-logo.svg') width='97' height='27' alt='acino')
+			+e.button-wrap
+				+e('a').button.btn.btn-white(href='/') Купити
+		+e.main
+			+e.contact
+				+e.contact-title Зв’‎яжіться з нами:
+				+e('ul').contact-list
+					+e('li').contact-list-item
+						+e('a').contact-link(href='mailto:info@acino.com.ua') info@acino.com.ua
+					+e('li').contact-list-item
+						+e('a').contact-link(href='tel=08003424456') 0 800 342 44 56
+			+e.copyright &copy; <span class='footer__copyright-year'>2021</span> Acino. Всі права захищені.
+		+e.aside
+			+e.info
+				p Реклама дієтичної добавки. Не є лікарським засобом. Перед вживанням обов`язкова консультація лікаря. <br/>Виробник: ТОВ «Фарма Старт», прийняття претензій від споживачів ТОВ «Асіно Україна», <br/>Україна, 03124, м. Київ, бульвар Вацлава Гавела, 8, тел.: <a href='tel="+380442812333"'>+38 (044) 281-23-33</a>.
+				p Промо-код <strong>UA-HRYBY-DIC-102021-003</strong>

@@ -1,0 +1,63 @@
+@import '../../globals/variables.sass'
+@import '../../globals/mixins.sass'
+
+.intro
+	position: relative
+	margin-bottom: 325px
+	background-color: $siteColor
+	&__bg
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		opacity: 0
+		&-image
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__inner
+		position: relative
+		z-index: 2
+		padding: 130px 0 420px
+		height: 100vh
+		min-height: 780px
+		text-align: center
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	&__title
+		margin: 0 0 15px
+		font-family: $secondFont
+		font-size: 122px
+		line-height: 1
+		color: $whiteColor
+		font-weight: 500
+		letter-spacing: -2pt
+		text-transform: uppercase
+	&__text
+		font-size: 24px
+		line-height: 1.4
+		color: $whiteColor
+	&__footer
+		margin-top: 30px
+	&__button
+		min-width: 168px
+	&__image
+		position: absolute
+		z-index: 1
+		left: 50%
+		bottom: -330px
+		margin-left: -440px
+		width: 662px
+		height: 763px
+		&-i
+			display: block
+			width: 100%
+			height: auto
+	&__ticker
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0

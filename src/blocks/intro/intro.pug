@@ -1,0 +1,18 @@
+if bg
+	+e.bg
+		+e('img').bg-image.lozad(data-src=bg src=png64 width='1440' height='856' alt='')
+if ticker
+	+e.ticker
+		+b.ticker-box: +i({data: ticker})
+.container
+	+e.inner
+		if title
+			+e('h1').title!= title
+		if text
+			+e.text!= text
+		if buttonLabel && buttonUrl
+			+e.footer
+				+e('a').button.btn.btn-white(href=buttonUrl)= buttonLabel
+	if image
+		+e.image
+			+e('img').image-i.lozad(data-src=image src=png64 width='662' height='763' alt='')

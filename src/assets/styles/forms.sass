@@ -1,0 +1,44 @@
+@import '../../globals/variables.sass'
+@import '../../globals/mixins.sass'
+
+.form-group
+	position: relative
+	margin-bottom: 24px
+
+.form-control
+	display: block
+	width: 100%
+	padding: 17px 30px
+	height: 52px
+	font-family: $mainFont
+	font-size: 12px
+	line-height: 1.428
+	font-weight: bold
+	color: $blackColor
+	text-transform: uppercase
+	letter-spacing: 1pt
+	border: 0 none
+	background: $whiteColor
+	border-radius: 4px
+	transition: .2s background ease-in-out
+	outline: 0 none
+	-webkit-appearance: none
+	&:-webkit-autofill
+		-webkit-text-fill-color: $blackColor
+		box-shadow: 0 0 0 1000px $whiteColor inset
+	&::-webkit-input-placeholder
+		color: $blackColor
+	&::-moz-placeholder
+		color: $blackColor
+	&:-moz-placeholder
+		color: $blackColor
+	&:-ms-input-placeholder
+		color: $blackColor
+
+textarea.form-control
+	height: auto
+	resize: vertical
+
+.has-error
+	.form-control
+		background: $redColor !important

@@ -1,0 +1,47 @@
+@import '../../globals/variables.sass'
+@import '../../globals/mixins.sass'
+
+.header
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	z-index: 150
+	// flex-grow: 0
+	// flex-shrink: 0
+	// flex-basis: auto
+	&__inner
+		padding: 15px 0
+		display: flex
+		align-items: center
+		justify-content: space-between
+		@media (min-width: 1460px)
+			margin: 0 -95px
+	&__logo
+		flex-shrink: 0
+		width: 97px
+		height: 27px
+		text-decoration: none
+		&-image
+			display: block
+			width: 100%
+			height: auto
+	&__menu
+		&-list
+			margin: 0
+			padding: 0
+			list-style: none
+			display: flex
+			align-items: center
+		&-item
+			margin: 0 16px
+		&-link
+			display: block
+			font-size: 16px
+			font-weight: 600
+			color: $whiteColor
+			text-decoration: none
+			&:hover
+				color: $blackColor
+	&__button
+		min-width: 116px
